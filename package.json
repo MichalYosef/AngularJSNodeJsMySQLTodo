@@ -1,0 +1,26 @@
+{
+  "name": "angularjsnodejsmysqltodo",
+  "version": "1.0.0",
+  "description": "Learnning NodeJs AngularJs MySql",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michal Yosef",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "angular-route": "^1.6.8",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0",
+    "express": "^4.16.2",
+    "http-server": "^0.11.1",
+    "jquery": "^3.3.1",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.14.11",
+    "path": "^0.12.7",
+    "popper.js": "^1.12.9",
+    "serve-favicon": "^2.4.5"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="todo.js"></script>
+
+    <title>Document</title>
+
+</head>
+
+<body ng-app="myApp" ng-controller="todoCtrl"><!-- “I want to use angular module 
+                                                called ‘myApp’ and angular controller 
+                                                called ‘todoCtrl’ to make this page interactive” -->
+
+<h2>My TODO list</h2>
+
+<!-- a form to insert new TODOs -->
+
+<form ng-submit="todoAdd()">
+    <input type="text" ng-model="todoInput" size="50" placeholder="Add new" id="firstInput" autofocus>
+    <input type="submit" value="Add New">
+</form>
+
+<br>
+<hr>
+<br>
+<!-- show the todo list -->
+
+<div ng-repeat="x in todoList">
+    <input type="checkbox" ng-model="x.done">
+    <span ng-bind="x.todoText"></span>
+</div>
+<p><button ng-click="remove()"> Remove done!</button></p>
+    
+</body>
+</html>
